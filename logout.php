@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/includes/bootstrap.php';if(current_user())log_activity($conn,(int)current_user()['id'],'logout','Logged out');$_SESSION=[];session_destroy();redirect('login.php');?>
